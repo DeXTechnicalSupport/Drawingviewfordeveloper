@@ -1,0 +1,38 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.developer.sdc2018.samsungdex.drawingappfordex.MainActivity">
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_cast_connected"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_brush"
+        android:title="@string/action_brush"
+        android:icon="@drawable/ic_brush"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_undo"
+        android:title="@string/action_undo"
+        android:icon="@drawable/ic_undo"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_redo"
+        android:title="@string/action_redo"
+        android:icon="@drawable/ic_redo"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/action_delete"
+        android:icon="@drawable/ic_delete_black"
+        app:showAsAction="always" />
+
+
+</menu>

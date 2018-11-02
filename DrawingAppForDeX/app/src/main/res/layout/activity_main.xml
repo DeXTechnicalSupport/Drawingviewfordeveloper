@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.developer.sdc2018.samsungdex.drawingappfordex.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:backgroundTint="@color/colorAccent"
+        app:elevation="8dp"
+        android:clipChildren="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@drawable/top_toolbar_background"
+            android:outlineProvider="background"
+            app:elevation="8dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/hidden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/app_bar_layout"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/rounded_bottom"
+        android:backgroundTint="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/values"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/primary_text"
+            android:text="Medium Text"/>
+    </LinearLayout>
+
+    <com.developer.sdc2018.samsungdex.drawingappfordex.CustomView
+        android:id="@+id/custom_view"
+        android:layout_below="@+id/hidden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:layout_above="@+id/toolbar_bottom" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/email_fab"
+        android:title="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/toolbar_bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_email"
+        app:showAsAction="always"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_toolbar_background"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+</RelativeLayout>
